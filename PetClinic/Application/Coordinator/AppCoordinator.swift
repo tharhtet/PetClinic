@@ -19,7 +19,7 @@ class AppCoordinator: BaseCoordinator {
         guard let window = window else { return }
         removeChildCoordinators()
         self.window = window
-        self.showHomeScreen()
+        self.showTutorial()
     }
     
     private func showTutorial() {
