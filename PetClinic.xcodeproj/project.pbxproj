@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A39105C2B77796B00037B9B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39105B2B77796B00037B9B /* UserManager.swift */; };
+		9A39105E2B7779EE00037B9B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39105D2B7779EE00037B9B /* UserModel.swift */; };
 		9A5D42E52B6A175400DAA5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D42E42B6A175400DAA5F1 /* AppDelegate.swift */; };
 		9A5D42E72B6A175400DAA5F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D42E62B6A175400DAA5F1 /* SceneDelegate.swift */; };
 		9A5D42EE2B6A175500DAA5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5D42ED2B6A175500DAA5F1 /* Assets.xcassets */; };
@@ -114,6 +116,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A39105B2B77796B00037B9B /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		9A39105D2B7779EE00037B9B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		9A5D42E12B6A175400DAA5F1 /* PetClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5D42E42B6A175400DAA5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A5D42E62B6A175400DAA5F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +236,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A39105A2B77795500037B9B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A39105B2B77796B00037B9B /* UserManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		9A5D42D82B6A175400DAA5F1 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +269,7 @@
 			children = (
 				9A5D43162B6A42AB00DAA5F1 /* Application */,
 				9ADE140A2B6CE32500C0688C /* Common */,
+				9A39105A2B77795500037B9B /* Services */,
 				9A6615D02B74844B005F2EEB /* Model */,
 				9ADE14042B6B931200C0688C /* Storyboards */,
 				9ADE13FC2B6B925B00C0688C /* ViewControllers */,
@@ -327,6 +340,7 @@
 			children = (
 				9A6615D12B748454005F2EEB /* SlideModel.swift */,
 				9AF81E522B76104A00E4315E /* TabModel.swift */,
+				9A39105D2B7779EE00037B9B /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -741,9 +755,11 @@
 				9AF81DFD2B749E4500E4315E /* PetCell.swift in Sources */,
 				9AF81E762B7754D200E4315E /* SignUpCoordinator.swift in Sources */,
 				9A6615E82B74897B005F2EEB /* HomeViewModel.swift in Sources */,
+				9A39105E2B7779EE00037B9B /* UserModel.swift in Sources */,
 				9A6615C32B748182005F2EEB /* Container+ViewModels.swift in Sources */,
 				9A5D431B2B6A42E900DAA5F1 /* BaseCoordinator.swift in Sources */,
 				9A6615E62B748971005F2EEB /* HomeViewController.swift in Sources */,
+				9A39105C2B77796B00037B9B /* UserManager.swift in Sources */,
 				9AF81E742B7754C800E4315E /* SignUpViewModel.swift in Sources */,
 				9AF81E722B7754C100E4315E /* SignUpViewController.swift in Sources */,
 				9A6615D22B748454005F2EEB /* SlideModel.swift in Sources */,

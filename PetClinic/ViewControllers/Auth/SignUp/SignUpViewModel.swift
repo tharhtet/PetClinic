@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SignUpViewModelCoordinatorDelegate: class {
-    
+    func backAction()
 }
 
 protocol SignUpViewModelProtocol {
@@ -17,4 +17,8 @@ protocol SignUpViewModelProtocol {
 
 class SignUpViewModel: SignUpViewModelProtocol {
     weak var coordinatorDelegate: SignUpViewModelCoordinatorDelegate?
+    
+    func backAction() {
+        coordinatorDelegate?.backAction()
+    }
 }

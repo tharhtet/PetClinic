@@ -29,4 +29,8 @@ class SignUpViewController: BaseViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
+    @IBAction func signUpAction(_ sender: Any) {
+    }
 }

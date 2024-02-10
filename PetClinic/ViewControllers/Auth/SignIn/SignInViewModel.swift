@@ -8,7 +8,8 @@
 import Foundation
 
 protocol SignInViewModelCoordinatorDelegate: class {
-    func loginAction()
+    func signUpRedirectAction()
+    func homeRedirectAction()
 }
 
 protocol SignInViewModelProtocol {
@@ -17,8 +18,20 @@ protocol SignInViewModelProtocol {
 
 class SignInViewModel: SignInViewModelProtocol {
     weak var coordinatorDelegate: SignInViewModelCoordinatorDelegate?
+    var username: String = ""
+    var password: String = ""
     
-    func loginAction() {
-        coordinatorDelegate?.loginAction()
+    func loginAction(completion: @escaping (Result<UserModel, Error>) -> Void) {
+        UserManager.shared.loginWithEmail(username: username, password: password) { result in
+            completion(result)
+        }
+    }
+    
+    func homeRedirectAction() {
+        coordinatorDelegate?.homeRedirectAction()
+    }
+    
+    func signUpRedirectAction() {
+        coordinatorDelegate?.signUpRedirectAction()
     }
 }

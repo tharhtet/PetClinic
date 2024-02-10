@@ -32,11 +32,11 @@ class HomeCoordinator: BaseCoordinator {
 
 
 extension HomeCoordinator: HomeViewModelCoordinatorDelegate {
-    func skipToWelcomePage() {
-//        let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
-//        let navigation = BaseNavigationController()
-//        coordinator.navigationVC = navigation
-//        coordinator.window = window
-//        start(coordinator: coordinator)
+    func didSignOut() {
+        let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
+        let navigation = BaseNavigationController()
+        coordinator.navigationVC = navigation
+        coordinator.window = window
+        start(coordinator: coordinator)
     }
 }

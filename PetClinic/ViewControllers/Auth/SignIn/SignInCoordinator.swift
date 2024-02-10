@@ -32,7 +32,16 @@ class SignInCoordinator: BaseCoordinator {
 
 
 extension SignInCoordinator: SignInViewModelCoordinatorDelegate {
-    func loginAction() {
+    
+    func homeRedirectAction() {
+        let coordinator = SceneDelegate.container.resolve(HomeCoordinator.self)!
+        let navigation = BaseNavigationController()
+        coordinator.navigationVC = navigation
+        coordinator.window = window
+        start(coordinator: coordinator)
+    }
+    
+    func signUpRedirectAction() {
         let coordinator = SceneDelegate.container.resolve(SignUpCoordinator.self)!
         coordinator.navigationVC = self.navigationVC
         start(coordinator: coordinator)

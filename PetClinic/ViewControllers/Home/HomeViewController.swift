@@ -78,4 +78,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let width = collectionView.frame.width / 2
         return CGSize(width: width, height: width)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel?.didSignOut()
+    }
 }

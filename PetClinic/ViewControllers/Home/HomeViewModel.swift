@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeViewModelCoordinatorDelegate: class {
-    
+    func didSignOut()
 }
 
 protocol HomeViewModelProtocol {
@@ -17,4 +17,9 @@ protocol HomeViewModelProtocol {
 
 class HomeViewModel: HomeViewModelProtocol {
     weak var coordinatorDelegate: HomeViewModelCoordinatorDelegate?
+    
+    func didSignOut() {
+        UserManager.shared.logout()
+        coordinatorDelegate?.didSignOut()
+    }
 }

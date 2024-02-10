@@ -28,7 +28,8 @@ class SignUpCoordinator: BaseCoordinator {
 
 
 extension SignUpCoordinator: SignUpViewModelCoordinatorDelegate {
-    func skipToWelcomePage() {
+    func backAction() {
+        self.navigationVC.dismiss(animated: true)
 //        let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
 //        let navigation = BaseNavigationController()
 //        coordinator.navigationVC = navigation

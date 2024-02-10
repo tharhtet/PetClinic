@@ -19,8 +19,13 @@ class AppCoordinator: BaseCoordinator {
         guard let window = window else { return }
         removeChildCoordinators()
         self.window = window
-//        self.showTutorial()
-        self.showSignInScreen()
+
+        if UserManager.shared.isLoginAlready() {
+            self.showTutorial()
+        } else {
+            self.showSignInScreen()
+        }
+        
     }
     
     private func showTutorial() {

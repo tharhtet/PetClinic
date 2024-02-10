@@ -39,10 +39,21 @@ class SignInViewController: BaseViewController, Storyboarded {
     
     
     @IBAction func loginAction(_ sender: Any) {
+        viewModel?.username = emailTextField.text ?? ""
+        viewModel?.password = passwordTextField.text ?? ""
+        
+        viewModel?.loginAction(completion: { result in
+            switch result {
+                case .success(let data):
+                    self.viewModel?.homeRedirectAction()
+                case .failure(let error):
+                    print("Error")
+            }
+        })
     }
     
     @IBAction func signUpAction(_ sender: Any) {
-        viewModel?.loginAction()
+        viewModel?.signUpRedirectAction()
     }
 }
 
