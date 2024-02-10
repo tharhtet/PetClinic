@@ -6,14 +6,13 @@
 //
 
 import Foundation
-import UIKit
 
 protocol HomeViewModelCoordinatorDelegate: class {
     
 }
 
 protocol HomeViewModelProtocol {
-    var coordinatorDelegate: HomeViewModelCoordinatorDelegate?{get set}
+    var coordinatorDelegate: HomeViewModelCoordinatorDelegate? {get set}
 }
 
 class HomeViewModel: HomeViewModelProtocol {

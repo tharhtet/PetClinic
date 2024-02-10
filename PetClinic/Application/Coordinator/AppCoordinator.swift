@@ -19,7 +19,8 @@ class AppCoordinator: BaseCoordinator {
         guard let window = window else { return }
         removeChildCoordinators()
         self.window = window
-        self.showTutorial()
+//        self.showTutorial()
+        self.showSignInScreen()
     }
     
     private func showTutorial() {
@@ -31,11 +32,11 @@ class AppCoordinator: BaseCoordinator {
     }
     
     private func showSignInScreen() {
-//        let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
-//        let navigation = BaseNavigationController()
-//        coordinator.navigationVC = navigation
-//        coordinator.window = window
-//        start(coordinator: coordinator)
+        let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
+        let navigation = BaseNavigationController()
+        coordinator.navigationVC = navigation
+        coordinator.window = window
+        start(coordinator: coordinator)
     }
     
     private func showHomeScreen() {

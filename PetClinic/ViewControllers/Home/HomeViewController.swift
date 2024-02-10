@@ -32,19 +32,19 @@ class HomeViewController: BaseViewController, Storyboarded {
         self.collectionView.register(UINib(nibName: "PetCell", bundle: nil), forCellWithReuseIdentifier: "PetCell")
     }
     
-    @objc private func showFavoriteContacts() {
-    }
-    
-    
     private func setUpBindings() {
         //guard let viewModel = viewModel else { return }
+        let settings = FirestoreSettings()
+        settings.isPersistenceEnabled = true
+        db.settings = settings
+        
         fetchUsers()
     }
     
     func fetchUsers() {
         db.collection("Config/Home/results")
             .order(by: "order", descending: false)
-            .getDocuments { (querySnapshot, error) in
+            .getDocuments(source: .cache) { (querySnapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
             } else {

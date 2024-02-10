@@ -86,6 +86,14 @@
 		9AF81E5B2B761CCB00E4315E /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF81E5A2B761CCB00E4315E /* Record.storyboard */; };
 		9AF81E5D2B761CD300E4315E /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF81E5C2B761CD300E4315E /* Notification.storyboard */; };
 		9AF81E5F2B761CDB00E4315E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF81E5E2B761CDB00E4315E /* Auth.storyboard */; };
+		9AF81E642B7632CE00E4315E /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF81E632B7632CE00E4315E /* SignInCoordinator.swift */; };
+		9AF81E662B7632DA00E4315E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF81E652B7632DA00E4315E /* SignInViewModel.swift */; };
+		9AF81E682B7632E500E4315E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF81E672B7632E500E4315E /* SignInViewController.swift */; };
+		9AF81E6D2B77311100E4315E /* FloatingLabelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF81E6C2B77311100E4315E /* FloatingLabelInput.swift */; };
+		9AF81E702B77413800E4315E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9AF81E6F2B77413800E4315E /* IQKeyboardManagerSwift */; };
+		9AF81E722B7754C100E4315E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF81E712B7754C100E4315E /* SignUpViewController.swift */; };
+		9AF81E742B7754C800E4315E /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF81E732B7754C800E4315E /* SignUpViewModel.swift */; };
+		9AF81E762B7754D200E4315E /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF81E752B7754D200E4315E /* SignUpCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +190,13 @@
 		9AF81E5A2B761CCB00E4315E /* Record.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Record.storyboard; sourceTree = "<group>"; };
 		9AF81E5C2B761CD300E4315E /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		9AF81E5E2B761CDB00E4315E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		9AF81E632B7632CE00E4315E /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		9AF81E652B7632DA00E4315E /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		9AF81E672B7632E500E4315E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9AF81E6C2B77311100E4315E /* FloatingLabelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelInput.swift; sourceTree = "<group>"; };
+		9AF81E712B7754C100E4315E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9AF81E732B7754C800E4315E /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		9AF81E752B7754D200E4315E /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6615DB2B74852E005F2EEB /* Lottie in Frameworks */,
+				9AF81E702B77413800E4315E /* IQKeyboardManagerSwift in Frameworks */,
 				9AF81E4F2B7604D200E4315E /* FirebaseAuth in Frameworks */,
 				9ADE14072B6CDEF000C0688C /* Swinject in Frameworks */,
 				9ADE14092B6CDEF000C0688C /* Swinject-Dynamic in Frameworks */,
@@ -366,6 +382,7 @@
 		9ADE13FC2B6B925B00C0688C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9AF81E602B7632B200E4315E /* Auth */,
 				9ADE13FD2B6B925B00C0688C /* Welcome */,
 				9A6615E42B748964005F2EEB /* Home */,
 			);
@@ -403,6 +420,7 @@
 				9ADE140B2B6CE32500C0688C /* Base */,
 				9AF81DFE2B74A98600E4315E /* Extension */,
 				9A6615C92B74827C005F2EEB /* Protocols */,
+				9AF81E6B2B7730FB00E4315E /* Libs */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -490,6 +508,43 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		9AF81E602B7632B200E4315E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9AF81E612B7632B600E4315E /* SignIn */,
+				9AF81E622B7632BD00E4315E /* SignUp */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9AF81E612B7632B600E4315E /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				9AF81E672B7632E500E4315E /* SignInViewController.swift */,
+				9AF81E652B7632DA00E4315E /* SignInViewModel.swift */,
+				9AF81E632B7632CE00E4315E /* SignInCoordinator.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		9AF81E622B7632BD00E4315E /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9AF81E712B7754C100E4315E /* SignUpViewController.swift */,
+				9AF81E732B7754C800E4315E /* SignUpViewModel.swift */,
+				9AF81E752B7754D200E4315E /* SignUpCoordinator.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		9AF81E6B2B7730FB00E4315E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				9AF81E6C2B77311100E4315E /* FloatingLabelInput.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,6 +569,7 @@
 				9A6615DA2B74852E005F2EEB /* Lottie */,
 				9AF81E4E2B7604D200E4315E /* FirebaseAuth */,
 				9AF81E502B7604D200E4315E /* FirebaseFirestore */,
+				9AF81E6F2B77413800E4315E /* IQKeyboardManagerSwift */,
 			);
 			productName = PetClinic;
 			productReference = 9A5D42E12B6A175400DAA5F1 /* PetClinic.app */;
@@ -592,6 +648,7 @@
 				9A6615BC2B747E6C005F2EEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9A6615C62B7481DA005F2EEB /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
 				9A6615D92B74852E005F2EEB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				9AF81E6E2B77413800E4315E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 9A5D42E22B6A175400DAA5F1 /* Products */;
 			projectDirPath = "";
@@ -682,12 +739,16 @@
 			files = (
 				9A6615C52B748182005F2EEB /* Container+Coordinators.swift in Sources */,
 				9AF81DFD2B749E4500E4315E /* PetCell.swift in Sources */,
+				9AF81E762B7754D200E4315E /* SignUpCoordinator.swift in Sources */,
 				9A6615E82B74897B005F2EEB /* HomeViewModel.swift in Sources */,
 				9A6615C32B748182005F2EEB /* Container+ViewModels.swift in Sources */,
 				9A5D431B2B6A42E900DAA5F1 /* BaseCoordinator.swift in Sources */,
 				9A6615E62B748971005F2EEB /* HomeViewController.swift in Sources */,
+				9AF81E742B7754C800E4315E /* SignUpViewModel.swift in Sources */,
+				9AF81E722B7754C100E4315E /* SignUpViewController.swift in Sources */,
 				9A6615D22B748454005F2EEB /* SlideModel.swift in Sources */,
 				9A5D43192B6A42C600DAA5F1 /* AppCoordinator.swift in Sources */,
+				9AF81E682B7632E500E4315E /* SignInViewController.swift in Sources */,
 				9A6615C42B748182005F2EEB /* Container+RegisterDependencies.swift in Sources */,
 				9A6615CC2B74827C005F2EEB /* Storyboarded.swift in Sources */,
 				9AF81E002B74A99100E4315E /* UIView.swift in Sources */,
@@ -696,9 +757,12 @@
 				9AF81E532B76104A00E4315E /* TabModel.swift in Sources */,
 				9A6615CD2B74827C005F2EEB /* AppStoryboard.swift in Sources */,
 				9ADE14012B6B925B00C0688C /* WelcomeViewController.swift in Sources */,
+				9AF81E642B7632CE00E4315E /* SignInCoordinator.swift in Sources */,
 				9ADE140F2B6CE32500C0688C /* BaseNavigationController.swift in Sources */,
 				9ADE140E2B6CE32500C0688C /* BaseViewController.swift in Sources */,
 				9A5D42E52B6A175400DAA5F1 /* AppDelegate.swift in Sources */,
+				9AF81E6D2B77311100E4315E /* FloatingLabelInput.swift in Sources */,
+				9AF81E662B7632DA00E4315E /* SignInViewModel.swift in Sources */,
 				9A6615D82B7484A6005F2EEB /* OnboardingCell.swift in Sources */,
 				9A5D42E72B6A175400DAA5F1 /* SceneDelegate.swift in Sources */,
 				9A6615EA2B748985005F2EEB /* HomeCoordinator.swift in Sources */,
@@ -1068,6 +1132,14 @@
 				minimumVersion = 4.4.0;
 			};
 		};
+		9AF81E6E2B77413800E4315E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1105,6 +1177,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9A6615BC2B747E6C005F2EEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		9AF81E6F2B77413800E4315E /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AF81E6E2B77413800E4315E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
