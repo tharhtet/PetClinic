@@ -13,6 +13,7 @@ import FirebaseAuth
 protocol UserManagerProtocol {
     func loginWithEmail(username: String, password: String, completion: @escaping (Result<UserModel, Error>) -> Void)
     func fetchUserData(userId: String, completion: @escaping (Result<UserModel, Error>) -> Void)
+    func getUserId() -> String
     func isLoginAlready() -> Bool
     func logout()
 }
@@ -48,6 +49,10 @@ class UserManager: UserManagerProtocol {
                 completion(.success(user))
             }
         }
+    }
+    
+    func getUserId() -> String {
+        return Auth.auth().currentUser?.uid ?? ""
     }
     
     func isLoginAlready() -> Bool {

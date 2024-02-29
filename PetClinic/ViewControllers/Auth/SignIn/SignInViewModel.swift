@@ -22,6 +22,10 @@ class SignInViewModel: SignInViewModelProtocol {
     var password: String = ""
     
     func loginAction(completion: @escaping (Result<UserModel, Error>) -> Void) {
+        if username == "" || password == "" {
+            completion(.failure(LoginError.invalidUsername))
+            return
+        }
         UserManager.shared.loginWithEmail(username: username, password: password) { result in
             completion(result)
         }
@@ -34,4 +38,11 @@ class SignInViewModel: SignInViewModelProtocol {
     func signUpRedirectAction() {
         coordinatorDelegate?.signUpRedirectAction()
     }
+}
+
+
+enum LoginError: Error {
+    case invalidUsername
+    case invalidPassword
+    case invalidEmailFormat
 }

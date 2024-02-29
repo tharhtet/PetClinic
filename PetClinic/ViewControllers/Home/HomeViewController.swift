@@ -7,14 +7,11 @@
 
 import Foundation
 import UIKit
-import FirebaseCore
-import FirebaseFirestore
 
 class HomeViewController: BaseViewController, Storyboarded {
     
     static var storyboard = AppStoryboard.home
     var viewModel: HomeViewModel?
-    let db = Firestore.firestore()
     private var tabList: [TabModel] = []
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -23,7 +20,7 @@ class HomeViewController: BaseViewController, Storyboarded {
         super.viewDidLoad()
         self.configUI()
         self.setUpBindings()
-        
+        print(UserManager.shared.getUserId())
     }
 
     private func configUI() {
@@ -34,29 +31,18 @@ class HomeViewController: BaseViewController, Storyboarded {
     
     private func setUpBindings() {
         //guard let viewModel = viewModel else { return }
-        let settings = FirestoreSettings()
-        settings.isPersistenceEnabled = true
-        db.settings = settings
-        
         fetchUsers()
     }
     
     func fetchUsers() {
-        db.collection("Config/Home/results")
-            .order(by: "order", descending: false)
-            .getDocuments(source: .cache) { (querySnapshot, error) in
-            if let error = error {
-                print("Error getting documents: \(error)")
-            } else {
-                for document in querySnapshot!.documents {
-                    let data = document.data()
-                    let name = data["name"] as? String ?? ""
-                    let iconName = data["iconName"] as? String ?? ""
-                    let pageName = data["pageName"] as? String ?? ""
-                    let obj = TabModel(name: name, nameMm: name, iconName: iconName, pageName: pageName)
-                    self.tabList.append(obj)
-                }
+        self.tabList = []
+        viewModel?.fetchConfig { result in
+            switch result {
+            case .success(let data):
+                self.tabList = data
                 self.collectionView.reloadData()
+            case .failure(let error):
+                print("error")
             }
         }
     }
@@ -80,6 +66,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel?.didSignOut()
+        if indexPath.row == 1 {
+            viewModel?.didMyPetRedirectAction()
+        }
+        if indexPath.row == 4 {
+            viewModel?.didSignOut()
+        }
+        
     }
 }

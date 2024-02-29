@@ -21,7 +21,12 @@ class AppCoordinator: BaseCoordinator {
         self.window = window
 
         if UserManager.shared.isLoginAlready() {
-            self.showTutorial()
+            if LocalStorage.shared.getIsOnboarding() {
+                self.showHomeScreen()
+            } else {
+                self.showTutorial()
+            }
+            
         } else {
             self.showSignInScreen()
         }
@@ -45,10 +50,10 @@ class AppCoordinator: BaseCoordinator {
     }
     
     private func showHomeScreen() {
-//        let coordinator = SceneDelegate.container.resolve(MainTabCoordinator.self)!
-//        let navigation = BaseNavigationController()
-//        coordinator.navigationVC = navigation
-//        coordinator.window = window
-//        start(coordinator: coordinator)
+        let coordinator = SceneDelegate.container.resolve(HomeCoordinator.self)!
+        let navigation = BaseNavigationController()
+        coordinator.navigationVC = navigation
+        coordinator.window = window
+        start(coordinator: coordinator)
     }
 }

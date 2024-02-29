@@ -9,6 +9,7 @@ import Foundation
 
 protocol HomeViewModelCoordinatorDelegate: class {
     func didSignOut()
+    func redirectMyPets()
 }
 
 protocol HomeViewModelProtocol {
@@ -17,9 +18,25 @@ protocol HomeViewModelProtocol {
 
 class HomeViewModel: HomeViewModelProtocol {
     weak var coordinatorDelegate: HomeViewModelCoordinatorDelegate?
+    private var tabList: [TabModel] = []
+    
+    func fetchConfig(completion: @escaping (Result<[TabModel], Error>) -> Void) {
+        PetsManager.shared.fetchConfig { result in
+            switch result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    func didMyPetRedirectAction() {
+        coordinatorDelegate?.redirectMyPets()
+    }
     
     func didSignOut() {
         UserManager.shared.logout()
+        LocalStorage.shared.setIsOnboarding(false)
         coordinatorDelegate?.didSignOut()
     }
 }

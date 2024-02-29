@@ -21,6 +21,7 @@ class WelcomeViewModel: WelcomeViewModelProtocol {
     weak var coordinatorDelegate: WelcomeViewModelCoordinatorDelegate?
     
     func skipOnboarding() {
+        LocalStorage.shared.setIsOnboarding(true)
         self.coordinatorDelegate?.skipToWelcomePage()
     }
 }
