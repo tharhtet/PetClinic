@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		9A39105C2B77796B00037B9B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39105B2B77796B00037B9B /* UserManager.swift */; };
 		9A39105E2B7779EE00037B9B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39105D2B7779EE00037B9B /* UserModel.swift */; };
+		9A3910612B77F1C400037B9B /* MyPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910602B77F1C400037B9B /* MyPetViewController.swift */; };
+		9A3910632B77F1CC00037B9B /* MyPetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910622B77F1CC00037B9B /* MyPetViewModel.swift */; };
+		9A3910652B77F1D600037B9B /* MyPetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910642B77F1D600037B9B /* MyPetCoordinator.swift */; };
+		9A3910672B77F33100037B9B /* PetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910662B77F33100037B9B /* PetManager.swift */; };
+		9A39106E2B79CF2200037B9B /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39106D2B79CF2200037B9B /* AddPetViewController.swift */; };
+		9A3910702B79CF2E00037B9B /* AddPetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39106F2B79CF2E00037B9B /* AddPetViewModel.swift */; };
+		9A3910722B79CF4100037B9B /* AddPetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910712B79CF4100037B9B /* AddPetCoordinator.swift */; };
+		9A3910742B79D2EA00037B9B /* AddPet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3910732B79D2EA00037B9B /* AddPet.storyboard */; };
+		9A3910772B79E55200037B9B /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910762B79E55200037B9B /* LocalStorage.swift */; };
+		9A3910792B79E59A00037B9B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910782B79E59A00037B9B /* Constants.swift */; };
 		9A5D42E52B6A175400DAA5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D42E42B6A175400DAA5F1 /* AppDelegate.swift */; };
 		9A5D42E72B6A175400DAA5F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D42E62B6A175400DAA5F1 /* SceneDelegate.swift */; };
 		9A5D42EE2B6A175500DAA5F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5D42ED2B6A175500DAA5F1 /* Assets.xcassets */; };
@@ -118,6 +128,16 @@
 /* Begin PBXFileReference section */
 		9A39105B2B77796B00037B9B /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		9A39105D2B7779EE00037B9B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9A3910602B77F1C400037B9B /* MyPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetViewController.swift; sourceTree = "<group>"; };
+		9A3910622B77F1CC00037B9B /* MyPetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetViewModel.swift; sourceTree = "<group>"; };
+		9A3910642B77F1D600037B9B /* MyPetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetCoordinator.swift; sourceTree = "<group>"; };
+		9A3910662B77F33100037B9B /* PetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetManager.swift; sourceTree = "<group>"; };
+		9A39106D2B79CF2200037B9B /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		9A39106F2B79CF2E00037B9B /* AddPetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewModel.swift; sourceTree = "<group>"; };
+		9A3910712B79CF4100037B9B /* AddPetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetCoordinator.swift; sourceTree = "<group>"; };
+		9A3910732B79D2EA00037B9B /* AddPet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPet.storyboard; sourceTree = "<group>"; };
+		9A3910762B79E55200037B9B /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		9A3910782B79E59A00037B9B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9A5D42E12B6A175400DAA5F1 /* PetClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5D42E42B6A175400DAA5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A5D42E62B6A175400DAA5F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,8 +260,37 @@
 			isa = PBXGroup;
 			children = (
 				9A39105B2B77796B00037B9B /* UserManager.swift */,
+				9A3910662B77F33100037B9B /* PetManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9A39105F2B77F1AD00037B9B /* MyPets */ = {
+			isa = PBXGroup;
+			children = (
+				9A3910602B77F1C400037B9B /* MyPetViewController.swift */,
+				9A3910622B77F1CC00037B9B /* MyPetViewModel.swift */,
+				9A3910642B77F1D600037B9B /* MyPetCoordinator.swift */,
+			);
+			path = MyPets;
+			sourceTree = "<group>";
+		};
+		9A39106C2B79CEFE00037B9B /* AddPet */ = {
+			isa = PBXGroup;
+			children = (
+				9A39106D2B79CF2200037B9B /* AddPetViewController.swift */,
+				9A39106F2B79CF2E00037B9B /* AddPetViewModel.swift */,
+				9A3910712B79CF4100037B9B /* AddPetCoordinator.swift */,
+			);
+			path = AddPet;
+			sourceTree = "<group>";
+		};
+		9A3910752B79E53C00037B9B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A3910762B79E55200037B9B /* LocalStorage.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9A5D42D82B6A175400DAA5F1 = {
@@ -399,6 +448,8 @@
 				9AF81E602B7632B200E4315E /* Auth */,
 				9ADE13FD2B6B925B00C0688C /* Welcome */,
 				9A6615E42B748964005F2EEB /* Home */,
+				9A39105F2B77F1AD00037B9B /* MyPets */,
+				9A39106C2B79CEFE00037B9B /* AddPet */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -424,6 +475,7 @@
 				9AF81E5A2B761CCB00E4315E /* Record.storyboard */,
 				9AF81E5C2B761CD300E4315E /* Notification.storyboard */,
 				9AF81E5E2B761CDB00E4315E /* Auth.storyboard */,
+				9A3910732B79D2EA00037B9B /* AddPet.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -431,10 +483,12 @@
 		9ADE140A2B6CE32500C0688C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9A3910752B79E53C00037B9B /* Utils */,
 				9ADE140B2B6CE32500C0688C /* Base */,
 				9AF81DFE2B74A98600E4315E /* Extension */,
 				9A6615C92B74827C005F2EEB /* Protocols */,
 				9AF81E6B2B7730FB00E4315E /* Libs */,
+				9A3910782B79E59A00037B9B /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -722,6 +776,7 @@
 				9AF81E3E2B75EF6B00E4315E /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				9AF81E262B75EF6B00E4315E /* SF-Pro-Display-Regular.otf in Resources */,
 				9AF81E5B2B761CCB00E4315E /* Record.storyboard in Resources */,
+				9A3910742B79D2EA00037B9B /* AddPet.storyboard in Resources */,
 				9AF81E342B75EF6B00E4315E /* SF-Pro-Display-BlackItalic.otf in Resources */,
 				9A6615EC2B748A5F005F2EEB /* Home.storyboard in Resources */,
 				9AF81E3D2B75EF6B00E4315E /* SF-Pro-Text-Medium.otf in Resources */,
@@ -751,11 +806,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3910722B79CF4100037B9B /* AddPetCoordinator.swift in Sources */,
 				9A6615C52B748182005F2EEB /* Container+Coordinators.swift in Sources */,
 				9AF81DFD2B749E4500E4315E /* PetCell.swift in Sources */,
+				9A3910612B77F1C400037B9B /* MyPetViewController.swift in Sources */,
 				9AF81E762B7754D200E4315E /* SignUpCoordinator.swift in Sources */,
 				9A6615E82B74897B005F2EEB /* HomeViewModel.swift in Sources */,
 				9A39105E2B7779EE00037B9B /* UserModel.swift in Sources */,
+				9A39106E2B79CF2200037B9B /* AddPetViewController.swift in Sources */,
 				9A6615C32B748182005F2EEB /* Container+ViewModels.swift in Sources */,
 				9A5D431B2B6A42E900DAA5F1 /* BaseCoordinator.swift in Sources */,
 				9A6615E62B748971005F2EEB /* HomeViewController.swift in Sources */,
@@ -763,11 +821,16 @@
 				9AF81E742B7754C800E4315E /* SignUpViewModel.swift in Sources */,
 				9AF81E722B7754C100E4315E /* SignUpViewController.swift in Sources */,
 				9A6615D22B748454005F2EEB /* SlideModel.swift in Sources */,
+				9A3910792B79E59A00037B9B /* Constants.swift in Sources */,
 				9A5D43192B6A42C600DAA5F1 /* AppCoordinator.swift in Sources */,
+				9A3910702B79CF2E00037B9B /* AddPetViewModel.swift in Sources */,
 				9AF81E682B7632E500E4315E /* SignInViewController.swift in Sources */,
+				9A3910632B77F1CC00037B9B /* MyPetViewModel.swift in Sources */,
 				9A6615C42B748182005F2EEB /* Container+RegisterDependencies.swift in Sources */,
 				9A6615CC2B74827C005F2EEB /* Storyboarded.swift in Sources */,
+				9A3910652B77F1D600037B9B /* MyPetCoordinator.swift in Sources */,
 				9AF81E002B74A99100E4315E /* UIView.swift in Sources */,
+				9A3910672B77F33100037B9B /* PetManager.swift in Sources */,
 				9ADE14032B6B925B00C0688C /* WelcomeCoordinator.swift in Sources */,
 				9ADE14022B6B925B00C0688C /* WelcomeViewModel.swift in Sources */,
 				9AF81E532B76104A00E4315E /* TabModel.swift in Sources */,
@@ -780,6 +843,7 @@
 				9AF81E6D2B77311100E4315E /* FloatingLabelInput.swift in Sources */,
 				9AF81E662B7632DA00E4315E /* SignInViewModel.swift in Sources */,
 				9A6615D82B7484A6005F2EEB /* OnboardingCell.swift in Sources */,
+				9A3910772B79E55200037B9B /* LocalStorage.swift in Sources */,
 				9A5D42E72B6A175400DAA5F1 /* SceneDelegate.swift in Sources */,
 				9A6615EA2B748985005F2EEB /* HomeCoordinator.swift in Sources */,
 			);

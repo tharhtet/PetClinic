@@ -24,10 +24,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQg-dX-u5Q">
-                        <rect key="frame" x="12" y="12" width="217" height="206"/>
+                        <rect key="frame" x="16" y="16" width="209" height="198"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5WU-zp-62h">
-                                <rect key="frame" x="66.666666666666671" y="28" width="84.000000000000014" height="84"/>
+                                <rect key="frame" x="62.666666666666671" y="28" width="84.000000000000014" height="84"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5WU-zp-62h" secondAttribute="height" multiplier="1:1" id="maY-Qf-beK"/>
@@ -35,7 +35,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-Yj-gLq">
-                                <rect key="frame" x="74.333333333333314" y="120" width="68.666666666666686" height="20"/>
+                                <rect key="frame" x="70.333333333333314" y="120.00000000000001" width="68.666666666666686" height="18.666666666666671"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -51,10 +51,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="MQg-dX-u5Q" secondAttribute="bottom" constant="12" id="99t-8j-TmS"/>
-                    <constraint firstItem="MQg-dX-u5Q" firstAttribute="leading" secondItem="15V-kk-rIr" secondAttribute="leading" constant="12" id="Vh8-ee-yVb"/>
-                    <constraint firstAttribute="trailing" secondItem="MQg-dX-u5Q" secondAttribute="trailing" constant="12" id="hP5-55-pta"/>
-                    <constraint firstItem="MQg-dX-u5Q" firstAttribute="top" secondItem="15V-kk-rIr" secondAttribute="top" constant="12" id="w4G-ci-DKM"/>
+                    <constraint firstAttribute="bottom" secondItem="MQg-dX-u5Q" secondAttribute="bottom" constant="16" id="99t-8j-TmS"/>
+                    <constraint firstItem="MQg-dX-u5Q" firstAttribute="leading" secondItem="15V-kk-rIr" secondAttribute="leading" constant="16" id="Vh8-ee-yVb"/>
+                    <constraint firstAttribute="trailing" secondItem="MQg-dX-u5Q" secondAttribute="trailing" constant="16" id="hP5-55-pta"/>
+                    <constraint firstItem="MQg-dX-u5Q" firstAttribute="top" secondItem="15V-kk-rIr" secondAttribute="top" constant="16" id="w4G-ci-DKM"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="241" height="230"/>

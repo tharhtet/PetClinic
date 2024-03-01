@@ -47,7 +47,7 @@ class SignInViewController: BaseViewController, Storyboarded {
                 case .success(let data):
                     self.viewModel?.homeRedirectAction()
                 case .failure(let error):
-                    print("Error")
+                    print("Error \(error.localizedDescription)")
             }
         })
     }

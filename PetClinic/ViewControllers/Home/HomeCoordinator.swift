@@ -32,6 +32,12 @@ class HomeCoordinator: BaseCoordinator {
 
 
 extension HomeCoordinator: HomeViewModelCoordinatorDelegate {
+    func redirectMyPets() {
+        let coordinator = SceneDelegate.container.resolve(MyPetCoordinator.self)!
+        coordinator.navigationVC = self.navigationVC
+        start(coordinator: coordinator)
+    }
+    
     func didSignOut() {
         let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
         let navigation = BaseNavigationController()

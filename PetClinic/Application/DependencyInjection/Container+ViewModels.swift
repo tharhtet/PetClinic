@@ -12,8 +12,10 @@ import SwinjectAutoregistration
 extension Container {
     func registerViewModels() {
         autoregister(WelcomeViewModel.self, initializer: WelcomeViewModel.init)
-        autoregister(HomeViewModel.self, initializer: HomeViewModel.init)
         autoregister(SignInViewModel.self, initializer: SignInViewModel.init)
         autoregister(SignUpViewModel.self, initializer: SignUpViewModel.init)
+        autoregister(HomeViewModel.self, initializer: HomeViewModel.init)
+        autoregister(MyPetViewModel.self, initializer: MyPetViewModel.init)
+        autoregister(AddPetViewModel.self, initializer: AddPetViewModel.init)
     }
 }
