@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol WelcomeViewModelCoordinatorDelegate: class {
-    func didTapOnRow()
+    func skipToWelcomePage()
 }
 
 protocol WelcomeViewModelProtocol {
@@ -21,6 +21,7 @@ class WelcomeViewModel: WelcomeViewModelProtocol {
     weak var coordinatorDelegate: WelcomeViewModelCoordinatorDelegate?
     
     func skipOnboarding() {
-        self.coordinatorDelegate?.didTapOnRow()
+        LocalStorage.shared.setIsOnboarding(true)
+        self.coordinatorDelegate?.skipToWelcomePage()
     }
 }

@@ -19,7 +19,18 @@ class AppCoordinator: BaseCoordinator {
         guard let window = window else { return }
         removeChildCoordinators()
         self.window = window
-        self.showHomeScreen()
+
+        if UserManager.shared.isLoginAlready() {
+            if LocalStorage.shared.getIsOnboarding() {
+                self.showHomeScreen()
+            } else {
+                self.showTutorial()
+            }
+            
+        } else {
+            self.showSignInScreen()
+        }
+        
     }
     
     private func showTutorial() {
@@ -31,18 +42,18 @@ class AppCoordinator: BaseCoordinator {
     }
     
     private func showSignInScreen() {
-//        let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
-//        let navigation = BaseNavigationController()
-//        coordinator.navigationVC = navigation
-//        coordinator.window = window
-//        start(coordinator: coordinator)
+        let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
+        let navigation = BaseNavigationController()
+        coordinator.navigationVC = navigation
+        coordinator.window = window
+        start(coordinator: coordinator)
     }
     
     private func showHomeScreen() {
-//        let coordinator = SceneDelegate.container.resolve(MainTabCoordinator.self)!
-//        let navigation = BaseNavigationController()
-//        coordinator.navigationVC = navigation
-//        coordinator.window = window
-//        start(coordinator: coordinator)
+        let coordinator = SceneDelegate.container.resolve(HomeCoordinator.self)!
+        let navigation = BaseNavigationController()
+        coordinator.navigationVC = navigation
+        coordinator.window = window
+        start(coordinator: coordinator)
     }
 }
