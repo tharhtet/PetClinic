@@ -17,5 +17,6 @@ extension Container {
         autoregister(HomeViewModel.self, initializer: HomeViewModel.init)
         autoregister(MyPetViewModel.self, initializer: MyPetViewModel.init)
         autoregister(AddPetViewModel.self, initializer: AddPetViewModel.init)
+        autoregister(PetProfileViewModel.self, initializer: PetProfileViewModel.init)
     }
 }

@@ -18,5 +18,6 @@ extension Container {
         autoregister(HomeCoordinator.self, initializer: HomeCoordinator.init)
         autoregister(MyPetCoordinator.self, initializer: MyPetCoordinator.init)
         autoregister(AddPetCoordinator.self, initializer: AddPetCoordinator.init)
+        autoregister(PetProfileCoordinator.self, initializer: PetProfileCoordinator.init)
     }
 }

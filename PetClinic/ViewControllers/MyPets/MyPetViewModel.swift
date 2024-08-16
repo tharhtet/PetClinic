@@ -9,6 +9,7 @@ import Foundation
 
 protocol MyPetViewModelCoordinatorDelegate: class {
     func didAddPetScreen()
+    func didRedirectPetDetail()
     func didSignOut()
 }
 
@@ -21,6 +22,10 @@ class MyPetViewModel: MyPetViewModelProtocol {
     
     func didAddPetScreen() {
         coordinatorDelegate?.didAddPetScreen()
+    }
+    
+    func didRedirectPetDetail() {
+        coordinatorDelegate?.didRedirectPetDetail()
     }
     
     func didSignOut() {

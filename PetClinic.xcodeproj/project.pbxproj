@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0E6CA42B9AEB0A005F651B /* XLPagerTabStrip in Frameworks */ = {isa = PBXBuildFile; productRef = 9A0E6CA32B9AEB0A005F651B /* XLPagerTabStrip */; };
 		9A39105C2B77796B00037B9B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39105B2B77796B00037B9B /* UserManager.swift */; };
 		9A39105E2B7779EE00037B9B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39105D2B7779EE00037B9B /* UserModel.swift */; };
 		9A3910612B77F1C400037B9B /* MyPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3910602B77F1C400037B9B /* MyPetViewController.swift */; };
@@ -47,6 +48,12 @@
 		9A6615E82B74897B005F2EEB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6615E72B74897B005F2EEB /* HomeViewModel.swift */; };
 		9A6615EA2B748985005F2EEB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6615E92B748985005F2EEB /* HomeCoordinator.swift */; };
 		9A6615EC2B748A5F005F2EEB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6615EB2B748A5F005F2EEB /* Home.storyboard */; };
+		9A968A1E2B9865A7002D16D6 /* PetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A968A1D2B9865A7002D16D6 /* PetProfileViewController.swift */; };
+		9A968A202B9865B1002D16D6 /* PetProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A968A1F2B9865B1002D16D6 /* PetProfileViewModel.swift */; };
+		9A968A222B9865BB002D16D6 /* PetProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A968A212B9865BB002D16D6 /* PetProfileCoordinator.swift */; };
+		9A968A2C2B9956F7002D16D6 /* MXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A968A262B9956F7002D16D6 /* MXScrollView.m */; };
+		9A968A2D2B9956F7002D16D6 /* MXParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A968A272B9956F7002D16D6 /* MXParallaxHeader.m */; };
+		9A968A2E2B9956F7002D16D6 /* MXScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A968A282B9956F7002D16D6 /* MXScrollViewController.m */; };
 		9ADE14012B6B925B00C0688C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE13FE2B6B925B00C0688C /* WelcomeViewController.swift */; };
 		9ADE14022B6B925B00C0688C /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE13FF2B6B925B00C0688C /* WelcomeViewModel.swift */; };
 		9ADE14032B6B925B00C0688C /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE14002B6B925B00C0688C /* WelcomeCoordinator.swift */; };
@@ -167,6 +174,16 @@
 		9A6615E72B74897B005F2EEB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9A6615E92B748985005F2EEB /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		9A6615EB2B748A5F005F2EEB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9A968A1D2B9865A7002D16D6 /* PetProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfileViewController.swift; sourceTree = "<group>"; };
+		9A968A1F2B9865B1002D16D6 /* PetProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfileViewModel.swift; sourceTree = "<group>"; };
+		9A968A212B9865BB002D16D6 /* PetProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfileCoordinator.swift; sourceTree = "<group>"; };
+		9A968A232B995653002D16D6 /* PetClinic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetClinic-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A968A262B9956F7002D16D6 /* MXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXScrollView.m; sourceTree = "<group>"; };
+		9A968A272B9956F7002D16D6 /* MXParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXParallaxHeader.m; sourceTree = "<group>"; };
+		9A968A282B9956F7002D16D6 /* MXScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXScrollViewController.m; sourceTree = "<group>"; };
+		9A968A292B9956F7002D16D6 /* MXScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXScrollView.h; sourceTree = "<group>"; };
+		9A968A2A2B9956F7002D16D6 /* MXParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXParallaxHeader.h; sourceTree = "<group>"; };
+		9A968A2B2B9956F7002D16D6 /* MXScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXScrollViewController.h; sourceTree = "<group>"; };
 		9ADE13FE2B6B925B00C0688C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9ADE13FF2B6B925B00C0688C /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		9ADE14002B6B925B00C0688C /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
@@ -236,6 +253,7 @@
 				9A6615BE2B747E6C005F2EEB /* FirebaseAnalytics in Frameworks */,
 				9A6615C82B7481DA005F2EEB /* SwinjectAutoregistration in Frameworks */,
 				9AF81E512B7604D200E4315E /* FirebaseFirestore in Frameworks */,
+				9A0E6CA42B9AEB0A005F651B /* XLPagerTabStrip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +336,7 @@
 			children = (
 				9A5D43162B6A42AB00DAA5F1 /* Application */,
 				9ADE140A2B6CE32500C0688C /* Common */,
+				9A968A242B9956F7002D16D6 /* Libs */,
 				9A39105A2B77795500037B9B /* Services */,
 				9A6615D02B74844B005F2EEB /* Model */,
 				9ADE14042B6B931200C0688C /* Storyboards */,
@@ -418,6 +437,7 @@
 				9A5D42EF2B6A175500DAA5F1 /* LaunchScreen.storyboard */,
 				9A5D42F22B6A175500DAA5F1 /* Info.plist */,
 				9AF81E402B75F42B00E4315E /* GoogleService-Info.plist */,
+				9A968A232B995653002D16D6 /* PetClinic-Bridging-Header.h */,
 				9AF81E012B75EF6B00E4315E /* Fonts */,
 				9A6615DD2B7487F4005F2EEB /* Images */,
 			);
@@ -442,6 +462,37 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		9A968A1B2B98658B002D16D6 /* PetProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9A968A1D2B9865A7002D16D6 /* PetProfileViewController.swift */,
+				9A968A1F2B9865B1002D16D6 /* PetProfileViewModel.swift */,
+				9A968A212B9865BB002D16D6 /* PetProfileCoordinator.swift */,
+			);
+			path = PetProfile;
+			sourceTree = "<group>";
+		};
+		9A968A242B9956F7002D16D6 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				9A968A252B9956F7002D16D6 /* MXParallaxHeader */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		9A968A252B9956F7002D16D6 /* MXParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				9A968A262B9956F7002D16D6 /* MXScrollView.m */,
+				9A968A272B9956F7002D16D6 /* MXParallaxHeader.m */,
+				9A968A282B9956F7002D16D6 /* MXScrollViewController.m */,
+				9A968A292B9956F7002D16D6 /* MXScrollView.h */,
+				9A968A2A2B9956F7002D16D6 /* MXParallaxHeader.h */,
+				9A968A2B2B9956F7002D16D6 /* MXScrollViewController.h */,
+			);
+			path = MXParallaxHeader;
+			sourceTree = "<group>";
+		};
 		9ADE13FC2B6B925B00C0688C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +500,7 @@
 				9ADE13FD2B6B925B00C0688C /* Welcome */,
 				9A6615E42B748964005F2EEB /* Home */,
 				9A39105F2B77F1AD00037B9B /* MyPets */,
+				9A968A1B2B98658B002D16D6 /* PetProfile */,
 				9A39106C2B79CEFE00037B9B /* AddPet */,
 			);
 			path = ViewControllers;
@@ -638,6 +690,7 @@
 				9AF81E4E2B7604D200E4315E /* FirebaseAuth */,
 				9AF81E502B7604D200E4315E /* FirebaseFirestore */,
 				9AF81E6F2B77413800E4315E /* IQKeyboardManagerSwift */,
+				9A0E6CA32B9AEB0A005F651B /* XLPagerTabStrip */,
 			);
 			productName = PetClinic;
 			productReference = 9A5D42E12B6A175400DAA5F1 /* PetClinic.app */;
@@ -717,6 +770,7 @@
 				9A6615C62B7481DA005F2EEB /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
 				9A6615D92B74852E005F2EEB /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				9AF81E6E2B77413800E4315E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				9A0E6CA22B9AEB0A005F651B /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */,
 			);
 			productRefGroup = 9A5D42E22B6A175400DAA5F1 /* Products */;
 			projectDirPath = "";
@@ -806,8 +860,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A968A2C2B9956F7002D16D6 /* MXScrollView.m in Sources */,
 				9A3910722B79CF4100037B9B /* AddPetCoordinator.swift in Sources */,
 				9A6615C52B748182005F2EEB /* Container+Coordinators.swift in Sources */,
+				9A968A1E2B9865A7002D16D6 /* PetProfileViewController.swift in Sources */,
+				9A968A2D2B9956F7002D16D6 /* MXParallaxHeader.m in Sources */,
 				9AF81DFD2B749E4500E4315E /* PetCell.swift in Sources */,
 				9A3910612B77F1C400037B9B /* MyPetViewController.swift in Sources */,
 				9AF81E762B7754D200E4315E /* SignUpCoordinator.swift in Sources */,
@@ -829,13 +886,16 @@
 				9A6615C42B748182005F2EEB /* Container+RegisterDependencies.swift in Sources */,
 				9A6615CC2B74827C005F2EEB /* Storyboarded.swift in Sources */,
 				9A3910652B77F1D600037B9B /* MyPetCoordinator.swift in Sources */,
+				9A968A202B9865B1002D16D6 /* PetProfileViewModel.swift in Sources */,
 				9AF81E002B74A99100E4315E /* UIView.swift in Sources */,
 				9A3910672B77F33100037B9B /* PetManager.swift in Sources */,
 				9ADE14032B6B925B00C0688C /* WelcomeCoordinator.swift in Sources */,
 				9ADE14022B6B925B00C0688C /* WelcomeViewModel.swift in Sources */,
 				9AF81E532B76104A00E4315E /* TabModel.swift in Sources */,
+				9A968A2E2B9956F7002D16D6 /* MXScrollViewController.m in Sources */,
 				9A6615CD2B74827C005F2EEB /* AppStoryboard.swift in Sources */,
 				9ADE14012B6B925B00C0688C /* WelcomeViewController.swift in Sources */,
+				9A968A222B9865BB002D16D6 /* PetProfileCoordinator.swift in Sources */,
 				9AF81E642B7632CE00E4315E /* SignInCoordinator.swift in Sources */,
 				9ADE140F2B6CE32500C0688C /* BaseNavigationController.swift in Sources */,
 				9ADE140E2B6CE32500C0688C /* BaseViewController.swift in Sources */,
@@ -1034,6 +1094,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngweloneche.PetClinic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PetClinic/SupportingFiles/PetClinic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1061,6 +1122,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngweloneche.PetClinic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PetClinic/SupportingFiles/PetClinic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1180,6 +1242,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9A0E6CA22B9AEB0A005F651B /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/XLPagerTabStrip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
 		9A5D43152B6A3BD200DAA5F1 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
@@ -1223,6 +1293,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9A0E6CA32B9AEB0A005F651B /* XLPagerTabStrip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A0E6CA22B9AEB0A005F651B /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */;
+			productName = XLPagerTabStrip;
+		};
 		9A6615BD2B747E6C005F2EEB /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9A6615BC2B747E6C005F2EEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

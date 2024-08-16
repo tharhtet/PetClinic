@@ -89,6 +89,8 @@ extension MyPetViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             viewModel?.didAddPetScreen()
+        } else {
+            viewModel?.didRedirectPetDetail()
         }
     }
 }

@@ -36,6 +36,13 @@ extension MyPetCoordinator: MyPetViewModelCoordinatorDelegate {
         start(coordinator: coordinator)
     }
     
+    func didRedirectPetDetail() {
+        let coordinator = SceneDelegate.container.resolve(PetProfileCoordinator.self)!
+        navigationVC.navigationBar.isHidden = true
+        coordinator.navigationVC = navigationVC
+        start(coordinator: coordinator)
+    }
+    
     func didSignOut() {
         let coordinator = SceneDelegate.container.resolve(SignInCoordinator.self)!
         let navigation = BaseNavigationController()
